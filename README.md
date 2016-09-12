@@ -8,6 +8,8 @@ folder structure as follows
     /css
       main.css
       normalize.css
+    /js
+      my_javascript.js
   /views
     layout.pug
     store.pug
