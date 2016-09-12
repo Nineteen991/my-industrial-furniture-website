@@ -1,0 +1,264 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    background: url("http://cdn.wonderfulengineering.com/wp-content/uploads/2013/12/metal-wallpaper-4.jpg") no-repeat center fixed;
+    background-size: cover;
+}
+
+a:link {
+    text-decoration: none;
+    color:#ddd;
+    margin: 0;
+}
+
+a:visited {
+    color: #70dcdc;
+}
+
+a:hover {
+    color: #00cc99;
+}
+
+div {
+    padding: 1%;
+}
+img {
+    width: 75%;
+    border-radius: 25%;
+    margin: 0;
+}
+
+figcaption {
+    padding: .5em 0;
+}
+
+h1, h2, h3, a {
+    font-family: "Limelight", cursive;
+    color: #eee;
+}
+
+p, address {
+    font-family: "Ubuntu", sans-serif;
+    color: #eee;
+}
+
+/***************************************************************************************************
+                                              Header
+***************************************************************************************************/
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    height: 2em;
+    position: fixed;
+    width: 100%;
+    background-color: #1a1a1a;
+}
+
+#menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 7px 0 0;
+}
+
+.name {
+    padding-top: 1em;
+    text-align: center;
+}
+
+/***************************************************************************************************
+                                             Section
+***************************************************************************************************/
+
+section {
+    display: flex;
+    flex-direction: column;
+    max-width: 95%;
+    margin: auto;
+}
+
+.labels {
+    text-align: center;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1em;
+    background-color: #333;
+    border: 1px solid #000;
+}
+
+a:first-child {
+    text-align: center
+}
+
+/**************************************************************************************************
+                                            Footer
+**************************************************************************************************/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer img {
+    border-radius: 0;
+    margin: 1em 0;
+    width: 100px;
+    height: 100px;
+}
+
+address {
+    margin: 1em 0 2em;
+}
+
+/**************************************************************************************************
+                                        Quote Rotator
+**************************************************************************************************/
+
+#quotes {
+    margin: 1em auto 0;
+    height: 250px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    z-index: -1;
+}
+
+.textItem {
+    position: absolute;
+    display: none;
+    color: #666;
+    width: 98%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+.textItem footer {
+    color: #ccc;
+}
+
+/**************************************************************************************************
+                                        about
+**************************************************************************************************/
+
+#me {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#Biechu img {
+    border-radius: 100%;
+    padding: 0;
+}
+
+.about_me {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.5em;
+    padding: 0;
+    margin-left: 2em;
+}
+
+.customize {
+    align-self: center;
+    margin-bottom: 1em;
+}
+
+.customize h2, strong {
+    color: #cc0;
+}
+
+/**************************************************************************************************
+                                        contact
+**************************************************************************************************/
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact h2 {
+    margin-bottom: 0;
+}
+
+#email {
+    color: #cc0;
+}
+
+/**************************************************************************************************
+                                        Responsive Design
+**************************************************************************************************/
+
+@media screen and (min-width: 432px) {
+    .container {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    .items {
+        flex: 1 50%;
+        padding: 1em;
+    }
+
+    #quotes {
+        height: 175px;
+    }
+}
+
+@media screen and (min-width: 825px) {
+
+    header {
+        flex-wrap: wrap;
+        border-bottom: 1px solid #eee;
+        padding: 1%;
+        margin-bottom: 0;
+    }
+
+    nav {
+        align-self: flex-end;
+        order: 1;
+        padding: 5px;
+    }
+
+    #menu {
+        width: 250px;
+        padding: 0;
+    }
+
+    .items {
+        flex: 1 33%;
+        padding: 1em;
+    }
+
+    #quotes {
+        height: 100px;
+        margin-bottom: 2em;
+    }
+
+    #me {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    footer img {
+        width: 200px;
+        height: 200px;
+    }
+}
